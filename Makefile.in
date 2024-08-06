@@ -68,6 +68,7 @@ run: $(SIM_LOGS)
 
 $(GEN):
 ifeq ("$(wildcard $(GEN))","")
+	cp -rp $(SRCTOP)/compatible-headers $(shell pwd)
 	mkdir -p build
 	cd build && cmake $(SRCTOP)
 	cd build && $(MAKE)

@@ -1,6 +1,7 @@
 build/
 .vscode/
 .cache/
+*/__pycache__
 include/autogen
 include/AutoGenComputeOp.h
 *.pyc

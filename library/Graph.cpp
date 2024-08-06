@@ -221,6 +221,7 @@ void Graph::emitHeader(std::ostream &os) {
   os << "#include <string.h>\n";
   os << "#include <stddef.h>\n";
   os << "#include <riscv_vector.h>\n";
+  os << "#include \"compatible-headers/non-policy.h\"\n";
   os << "typedef _Float16 float16_t;\n";
   os << "typedef float float32_t;\n";
   os << "typedef double float64_t;\n";
